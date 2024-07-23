@@ -1,0 +1,489 @@
+*{
+    box-sizing: border-box;
+    font-family: Inter;
+    padding: 0;
+    margin: 0;
+    color: var(--color-neutral-white);
+}
+/* GUIA DE ESTILOS */
+
+:root {
+
+ /* COLORES */
+ --color-neutral-white: #ffff;
+
+  /* ESPACIADO */
+  --spacing-0: 0px;
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 20px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+
+   /* PADDING */
+   --padding-0: 0px;
+   --padding-1: 8px;
+   --padding-2: 16px;
+   --padding-3: 24px;
+   --padding-4: 32px;
+
+ /* TAMAÑOS DE LETRA */
+ --font-size-10xl: 96px;
+ --font-size-8xl: 48px;
+ --font-size-6xl: 36px;
+}
+
+
+/* PROCURO RESETEAR TODAS LAS CONFIGURACIONES QUE NO SUMAN */
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    overflow-x: hidden;
+    
+}
+
+
+/* NAVBAR */
+nav {
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 8px;
+
+}
+nav .menu {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.nav-container ul {
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-icon {
+    width: auto;
+    height: var(--padding-2);
+    position: relative;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    padding-top: 0;
+    margin-top: 0;
+    height: 1cm;
+}
+/* ------ Fin NAVBAR */
+
+/* Inicio HERO */
+
+/* ADJUSTES QUE VAN A LOS ELEMENTOS DEL HERO */
+.hero {
+    flex: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(./img/hero.png); 
+    padding-right: 140px;
+    padding-left: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: -3px;
+}
+.cajita-centrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 421px;
+    padding-bottom: var(--padding-3);
+}
+/* ------- FIN */
+
+/* TITULO  SUBTITULO */
+.display-text {
+    color:  var(--color-neutral-white);
+    max-width: 70%;
+    text-align: center;
+}
+.display-text h1, h2 {
+    padding: none;
+    margin: var(--padding-0);
+}
+.display-title {
+    font-size: var(--font-size-10xl);
+  }
+.display-subtitle {
+    font-style: italic;
+    font-size: var(--font-size-8xl);
+  }
+ .display-description {
+    color: var(--color-neutral-white);
+    padding-top: 90px;
+    text-align: center;
+    max-width: 50%;
+}
+.button-div {
+    margin: var(--padding-4);
+}
+  .link-buylink {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #cc49ee, #57168f 50%, #3026bb);
+
+  }
+/* ------ Fin HERO */
+
+/* Inicio GALERIA-section */
+.div-photos-flex {
+    background-color: black;
+    padding-top: 112px;
+    padding-left: 360px;
+    padding-right: 360px;
+    margin-bottom: -3px;
+}
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 10fr);
+  justify-content: center;
+  align-items: center;
+}
+/* ------ Fin GALERIA-section */
+
+/* Inicio BANNER-section */
+.image-banner {
+    width: 100%;
+}
+
+/* ------ Fin BANNER-sect*/
+
+
+
+/* INICIO PANTALLA 3 */
+.screen-feature-section{
+    margin-top: -6px;
+    margin-bottom: -3px;
+    padding: 0;
+    background-image: url('./img/pantalla@1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: top; */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.screen-3-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;    
+}
+.screen-3-features {
+    /* position: absolute; */
+    /* top: 14%;
+    left: 40%; */
+    margin-left: 390px;
+    margin-top: 172px;
+}
+
+.screen-3-features h1 {
+    font-size: 50px;
+    margin-left: 80px;
+}
+.feature-list{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 45px;
+   color: white;
+   margin-left: 10%;
+   /* margin-top: 10%; */
+   /* position: absolute;
+   left: 50%; */
+
+
+}
+.feature-list > div p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.feature-list > div span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.feature-images{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 722px;
+    height: 93px;
+    gap: 55px;
+   margin-left: 12%;
+
+    /* position: absolute;
+    top: 35%; */
+}
+.screen-feature-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 93px;
+}
+.screen-feature-1 > div:has(> p),
+.screen-feature-2 > div:has(> p) {
+    /* Tu estilo aquí */
+   margin-left: 5px ;
+   text-align: left;
+}
+.screen-feature-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 328px;
+    height: 93px;
+}
+.screen-feature-1 img {
+    width: 91px;
+    height: 70px; 
+    /* margin-bottom: 10px;  */
+}
+
+.screen-feature-2 img {
+    width: 91px;
+    height: 70px; 
+}
+
+
+/*  FIN PANTALLA 3 */
+
+
+/* Inicio QUINTA SECCIÓN | FEATURE | BATERIA */
+.batery-content h1 {
+    font-size: var(--font-size-8xl);
+    margin: 16px;
+}
+.batery-section {
+    background-image: url(./img/batery@hero.png);
+    width: 100%;
+    padding-top: 52px;
+    padding-bottom: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: -3px;
+}
+.batery-content {
+    text-align: center;
+}
+.batery-icon {
+    padding-top: var(--padding-2);
+    width: 116px;
+}
+/* ------ Fin QUINTA SECCIÓN | FEATURE | BATERIA*/
+
+/* Inicio SEXTA SECCIÓN | FEATURE | PROCESADOR */
+.procesador-section {
+    background-image: url(./img/procesador@hero.png);
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 284px;
+    padding-left: 648px;
+    padding-right: var(--padding-0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: -23px;
+}
+.procesador-display-text {
+    padding-top: 32px;
+}
+.procesador-display-text h1, h2 {
+    font-size: var(--font-size-8xl);
+    margin: var(--padding-0);
+}
+.feature-container {
+    padding-top: var(--padding-4);
+    display: flex;
+   gap: 40px;
+}
+.feature-container p span {
+    font-weight: lighter;
+}
+.feature-header {
+    font-size: var(--font-size-8xl);
+    padding-bottom: var(--padding-2);
+}
+.procesador-feature {
+    text-align: center;
+    align-items: center;
+}
+.arrow-inline {
+    display: flex;
+}
+.arrow-inline img {
+    width: 32px;
+}
+/* ------ Fin SEXTA SECCIÓN | FEATURE | PROCESADOR */
+
+/* SEPTIMA SECCIÓN | FEATURE | REFRIGERACIÓN */
+.refigeracion-section {
+    background-color: black;
+    padding-top: 60px;
+    align-self: center;
+}
+.refigeracion-section h1 {
+    font-size: var(--font-size-8xl);
+    margin: var(--padding-0);
+    text-align: center;
+    padding-bottom: 64px;
+}
+.feature_container {
+    align-self: center;
+ }
+.refigeracion-feature-uno, .refigeracion-feature-dos {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.refigeracion-feature-uno .thermal-pad {
+    height: 82px;
+}
+
+.refigeracion-feature-dos .cooler-boost {
+    height: 32px;
+}
+.refigeracion-feature-dos .text-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-1);
+
+}
+.text-feature h3 {
+    font-size: var(--font-size-6xl);
+}
+.refigeracion-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+ /* ------ Fin SEXTA SECCIÓN | FEATURE | PROCESADOR */
+
+ /* OCTAVA SECCION | TODOS LOS FEATURES | COMPRAS MAS */
+ .comprar-ahora-section {
+    background-color: black;
+    padding-top: 74px;
+    padding-bottom: 74px;
+ }
+ .image-specs-container {
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .image-specs-container .image-sp {
+    height: 480px;
+    padding-right: 74px;
+ }
+ .image-specs-container h1 {
+    font-size: var(--font-size-8xl);
+ }
+ .text-group-specs li {
+    font-size: 14px;
+ }
+.buttons-div {
+    display: flex;
+   margin-top: 52px;
+    gap: 36px;
+    align-items: center;
+    align-content: flex-start;
+}
+.config-button {
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-weight: lighter;
+}
+ /* ------ Fin OCTAVA SECCION | TODOS LOS FEATURES | COMPRAS MAS */
+
+
+  /* NOVENA SECCIÓN | TAMBIÉN TE PUEDE INTERESAR | TIENDA DE PRODUCTOS */
+.products-sections {
+    padding: 46px 44px 80px 80px;
+
+}
+.products-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+.products-sections h3 {
+   color: black;
+   text-align: center;
+   padding-bottom: 24px;
+}
+.products-wrapper p {
+    color: black;
+    font-weight: lighter;
+}
+.product-image {
+    height: 216px;
+}
+.boton-contenedor {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+.boton-contenedor :hover {
+    background: rgba(242, 242, 242, 0.922);
+
+}
+/* ------ Fin NOVENA SECCIÓN | TAMBIÉN TE PUEDE INTERESAR | TIENDA DE PRODUCTOS */
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 80px 80px 64px 64px;
+    font-size: 14px;
+}
+footer p, hr {
+    color: rgb(75, 75, 75);
+}
+.texto-enlinea {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.politica {
+    display: flex;
+    gap: 16px;
+}
+/* ------ Fin FOOTER */
